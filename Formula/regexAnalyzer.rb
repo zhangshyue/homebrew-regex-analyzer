@@ -4,11 +4,9 @@
 class Regexanalyzer < Formula
   desc "A Regex Analyzer"
   homepage "https://github.com/ase-regex-comps/regex-library"
-  url "https://github.com/zhangshyue/homebrew-regexAnalyzer/blob/master/regex-library-1.0.0.tar.gz"
-  sha256 "ace33530270a88c5960b0846572fe6cc8943998214bc4d920213217176562c2e"
+  url "https://github.com/zhangshyue/regex-library/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "3a0b2fdaf35d503eba9b121abbc5d5d44010366a007c4fab91aaa6608f74a319"
   license "MIT"
-
-  bottle :unneeded
 
   depends_on "protobuf"
 
