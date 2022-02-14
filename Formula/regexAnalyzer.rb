@@ -9,6 +9,7 @@ class Regexanalyzer < Formula
   license "MIT"
 
   depends_on "protobuf"
+  depends_on "rich"
 
   def install
     # libexec.install Dir["*"]
@@ -16,7 +17,7 @@ class Regexanalyzer < Formula
     bin.install "regex-analyzer"
     bin.install "main.py"   
     bin.install "root_pb2.py"   
-    bin.install Dir["./bin"]
+    bin.install Dir["./build"]
     bin.install Dir["./extraction"]    
     bin.install Dir["./generalizability"]    
     bin.install Dir["./output"]    
