@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class RegexAnalyzer < Formula
+class Regexanalyzer < Formula
   desc "A Regex Analyzer"
   homepage "https://github.com/ase-regex-comps/regex-library"
   url "https://github.com/ase-regex-comps/regex-library/blob/homebrew/archive/regex-library-1.0.0.tar.gz"
@@ -9,10 +9,10 @@ class RegexAnalyzer < Formula
   license "MIT"
 
   def install
-    libexec.install "regexAnalyzer"
+    libexec.install "regexanalyzer"
   end
 
   test do
-    assert_match "regexAnalyzer version 1.0.0", shell_output("#{bin}/regexAnalyzer -v", 2)
+    assert_match "regexanalyzer version 1.0.0", shell_output("#{bin}/regexanalyzer -v", 2)
   end
 end
