@@ -9,7 +9,14 @@ class Regexanalyzer < Formula
   license "MIT"
 
   def install
-    bin.install "regexanalyzer"
+    bin.install "regex-library"    
+    bin.install Dir["extraction"]    
+    bin.install Dir["generalizability"]    
+    bin.install Dir["output"]    
+    bin.install Dir["parser"]
+    bin.install Dir["protobuf"]
+    bin.install Dir["security"]
+    bin.install Dir["understandability"]
   end
 
   test do
