@@ -14,7 +14,9 @@ class Regexanalyzer < Formula
     # libexec.install Dir["*"]
     # bin.write_exec_script (libexec/"regex-analyzer")
     bin.install "regex-analyzer"
-    bin.install "main.py"      
+    bin.install "main.py"   
+    bin.install "root_pb2.py"   
+    bin.install Dir["./bin"]
     bin.install Dir["./extraction"]    
     bin.install Dir["./generalizability"]    
     bin.install Dir["./output"]    
