@@ -9,7 +9,7 @@ class Regexanalyzer < Formula
   license "MIT"
 
   depends_on "protobuf"
-  depends_on "rich"
+  depends_on "rich" => :build
 
   def install
     # libexec.install Dir["*"]
