@@ -5,7 +5,7 @@ class Regexanalyzer < Formula
   desc "A Regex Analyzer"
   homepage "https://github.com/ase-regex-comps/regex-library"
   url "https://github.com/zhangshyue/homebrew-regexAnalyzer/blob/master/regex-library-1.0.0.tar.gz"
-  sha256 "25420f532eb0ef4e4219defe36f4e6c1d02ca306f4ac4ad4050c5577f79af014"
+  sha256 "42fa4ed799f7954f77c6d91dbcf4736557d1f4436d0d4532c3e382a6ac456472"
   license "MIT"
 
   bottle :unneeded
