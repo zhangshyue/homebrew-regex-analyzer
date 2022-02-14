@@ -9,7 +9,7 @@ class Regexanalyzer < Formula
   license "MIT"
 
   def install
-    libexec.install "regexanalyzer"
+    bin.install "regexanalyzer"
   end
 
   test do
