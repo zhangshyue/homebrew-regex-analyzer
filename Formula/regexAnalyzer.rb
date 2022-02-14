@@ -13,13 +13,14 @@ class Regexanalyzer < Formula
   def install
     bin.install "regex-analyzer"  
     bin.install "main.py"      
-    bin.install Dir["extraction"]    
-    bin.install Dir["generalizability"]    
-    bin.install Dir["output"]    
-    bin.install Dir["parser"]
-    bin.install Dir["protobuf"]
-    bin.install Dir["security"]
-    bin.install Dir["understandability"]
+    libexec.install Dir["extraction"]    
+    libexec.install Dir["generalizability"]    
+    libexec.install Dir["output"]    
+    libexec.install Dir["parser"]
+    libexec.install Dir["protobuf"]
+    libexec.install Dir["security"]
+    libexec.install Dir["understandability"]
+    bin.write_exec_script libexec/"script.sh"
   end
 
   test do
