@@ -9,7 +9,7 @@ class Regexanalyzer < Formula
   license "MIT"
 
   depends_on "protobuf"
-  depends_on "python@3.x"
+  depends_on "python@3.8"
   depends_on "Textualize/rich/rich"
 
   def install
