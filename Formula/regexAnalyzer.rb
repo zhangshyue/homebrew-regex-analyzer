@@ -9,7 +9,8 @@ class Regexanalyzer < Formula
   license "MIT"
 
   def install
-    bin.install "regex-library"    
+    bin.install "regex-analyzer"  
+    bin.install "main.py"      
     bin.install Dir["extraction"]    
     bin.install Dir["generalizability"]    
     bin.install Dir["output"]    
