@@ -9,7 +9,6 @@ class Regexanalyzer < Formula
   license "MIT"
 
   depends_on "protobuf"
-  depends_on "tqdm"
 
   def install
     bin.install "regex-analyzer"  
