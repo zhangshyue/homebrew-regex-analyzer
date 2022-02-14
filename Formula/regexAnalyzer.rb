@@ -19,7 +19,7 @@ class Regexanalyzer < Formula
     libexec.install Dir["protobuf"]
     libexec.install Dir["security"]
     libexec.install Dir["understandability"]
-    bin.write_exec_script bin/"regex-analyzer"
+    bin.write_exec_script libexec/"regex-analyzer"
   end
 
   test do
