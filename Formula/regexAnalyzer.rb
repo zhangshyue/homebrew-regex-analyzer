@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class regexAnalyzer < Formula
+class RegexAnalyzer < Formula
   desc "A Regex Analyzer"
   homepage "https://github.com/ase-regex-comps/regex-library"
   url "https://github.com/ase-regex-comps/regex-library/blob/homebrew/archive/regex-library-1.0.0.tar.gz", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
