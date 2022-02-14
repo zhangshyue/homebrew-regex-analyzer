@@ -8,6 +8,8 @@ class Regexanalyzer < Formula
   sha256 "25420f532eb0ef4e4219defe36f4e6c1d02ca306f4ac4ad4050c5577f79af014"
   license "MIT"
 
+  bottle :unneeded
+
   depends_on "protobuf"
 
   def install
