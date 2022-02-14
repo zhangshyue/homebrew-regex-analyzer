@@ -11,8 +11,7 @@ class Regexanalyzer < Formula
   depends_on "protobuf"
 
   def install
-    bin.install "regex-analyzer"  
-    bin.install "main.py"      
+    libexec.install "main.py"      
     libexec.install Dir["extraction"]    
     libexec.install Dir["generalizability"]    
     libexec.install Dir["output"]    
@@ -20,7 +19,7 @@ class Regexanalyzer < Formula
     libexec.install Dir["protobuf"]
     libexec.install Dir["security"]
     libexec.install Dir["understandability"]
-    bin.write_exec_script libexec/"script.sh"
+    bin.write_exec_script bin/"regex-analyzer"
   end
 
   test do
