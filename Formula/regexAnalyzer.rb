@@ -9,6 +9,7 @@ class Regexanalyzer < Formula
   license "MIT"
 
   depends_on "protobuf"
+  depends_on "python@3.x"
   depends_on "rich" => :build
 
   def install
