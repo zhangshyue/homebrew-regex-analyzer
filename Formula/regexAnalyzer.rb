@@ -10,7 +10,7 @@ class Regexanalyzer < Formula
 
   depends_on "protobuf"
   depends_on "python@3.8"
-  depends_on "Textualize/rich/rich" => :build
+  depends_on "Textualize/rich/rich"
 
   def install
     # libexec.install Dir["*"]
