@@ -4,8 +4,8 @@
 class Regexanalyzer < Formula
   desc "A Regex Analyzer"
   homepage "https://github.com/ase-regex-comps/regex-library"
-  url "https://github.com/zhangshyue/regex-library/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "9045a37f3c756443c1289d464888ad1c6c7318a6492e98ad0f90d4bc8e187a38"
+  url "https://github.com/zhangshyue/regex-library/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "cf5cff2097da2001d616f9be984c5e57683f07d1c8b740563ad0fe3a605d2b5d"
   license "MIT"
 
   depends_on "protobuf"
