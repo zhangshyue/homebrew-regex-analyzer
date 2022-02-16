@@ -3,8 +3,8 @@
 
 class Regexanalyzer < Formula
   desc "A Regex Analyzer"
-  url "https://github.com/zhangshyue/regex-library/archive/refs/tags/v1.0.4.tar.gz"
-  sha256 "98c3ca56f0426de8284a6d1e1d0889c28db73a5b99892a7dec89b12bbeb748bf"
+  url "https://github.com/zhangshyue/regex-library/archive/refs/tags/v1.0.7.tar.gz"
+  sha256 "acf479f929aa4c921bfcef47ebb49c0600d4cfca74c3aea11b6dd422396f49f5"
   license "MIT"
 
   depends_on "protobuf"
@@ -12,22 +12,8 @@ class Regexanalyzer < Formula
   depends_on "rust"
 
   def install
-    # bin.install "Makefile"
-    # bin.install "regex-analyzer"
-    # bin.install "main.py"   
-    # bin.install "root_pb2.py"   
-    # libexec.install Dir["build"]
-    # libexec.install Dir["extraction"]    
-    # libexec.install Dir["generalizability"]    
-    # libexec.install Dir["output"]    
-    # libexec.install Dir["parser"]
-    # libexec.install Dir["protobuf"]
-    # libexec.install Dir["security"]
-    # libexec.install Dir["understandability"]
     system "make install"
     libexec.install "regex-analyzer" and libexec.install Dir["*"] and bin.write_exec_script (libexec/"regex-analyzer")
-    # bin.install_symlink "#{libexec}/bin/regex-library"
-    # bin.write_exec_script (libexec/"regex-analyzer")
   end
 
   test do
