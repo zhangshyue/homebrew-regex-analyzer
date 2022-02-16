@@ -4,30 +4,30 @@
 class Regexanalyzer < Formula
   desc "A Regex Analyzer"
   homepage "https://github.com/ase-regex-comps/regex-library"
-  url "https://github.com/zhangshyue/regex-library/archive/refs/tags/v1.0.4.tar.gz"
-  sha256 "98c3ca56f0426de8284a6d1e1d0889c28db73a5b99892a7dec89b12bbeb748bf"
+  url "https://github.com/zhangshyue/regex-library/archive/refs/tags/v1.0.5.tar.gz"
+  sha256 "5eb7e501f0218d2c13a245a84f6fa4cf4a10eae2b2a63b7d89abfd9b10a7d86a"
   license "MIT"
 
   depends_on "protobuf"
   depends_on "python@3.8"
 
   def install
-    bin.install "Makefile"
-    bin.install "regex-analyzer"
-    bin.install "main.py"   
-    bin.install "root_pb2.py"   
-    bin.install Dir["./build"]
-    bin.install Dir["./extraction"]    
-    bin.install Dir["./generalizability"]    
-    bin.install Dir["./output"]    
-    bin.install Dir["./parser"]
-    bin.install Dir["./protobuf"]
-    bin.install Dir["./security"]
-    bin.install Dir["./understandability"]
-    system "make", "install"
-    # libexec.install Dir["*"]
+    # bin.install "Makefile"
+    # bin.install "regex-analyzer"
+    # bin.install "main.py"   
+    # bin.install "root_pb2.py"   
+    # libexec.install Dir["build"]
+    # libexec.install Dir["extraction"]    
+    # libexec.install Dir["generalizability"]    
+    # libexec.install Dir["output"]    
+    # libexec.install Dir["parser"]
+    # libexec.install Dir["protobuf"]
+    # libexec.install Dir["security"]
+    # libexec.install Dir["understandability"]
+    # system "make", "install"
+    libexec.install Dir["*"]
     # bin.install_symlink "#{libexec}/bin/regex-library"
-    # bin.write_exec_script (libexec/"regex-analyzer")
+    bin.write_exec_script (libexec/"regex-analyzer")
   end
 
   test do
