@@ -13,7 +13,7 @@ class Regexanalyzer < Formula
 
   def install
     system "make install"
-    libexec.install "regex-analyzer" and libexec.install Dir["*"] and bin.write_exec_script (libexec/"regex-analyzer")
+    libexec.install "regex-analyzer.sh" => "regex-analyzer" and libexec.install Dir["*"] and bin.write_exec_script (libexec/"regex-analyzer")
   end
 
   test do
