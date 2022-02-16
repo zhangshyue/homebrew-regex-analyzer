@@ -25,6 +25,7 @@ class Regexanalyzer < Formula
     # libexec.install Dir["security"]
     # libexec.install Dir["understandability"]
     # system "make", "install"
+    libexec.install "regex-analyzer.sh" => "regex-analyzer"
     libexec.install Dir["*"]
     # bin.install_symlink "#{libexec}/bin/regex-library"
     bin.write_exec_script (libexec/"regex-analyzer")
