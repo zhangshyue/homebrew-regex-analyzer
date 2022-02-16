@@ -3,8 +3,8 @@
 
 class Regexanalyzer < Formula
   desc "A Regex Analyzer"
-  url "https://github.com/zhangshyue/regex-library/archive/refs/tags/v1.0.12.tar.gz"
-  sha256 "b652e5994a468691251bae89d7b4dbe0cd0227bb7637e0dbc5b5a0113f1d29e2"
+  url "https://github.com/zhangshyue/regex-library/archive/refs/tags/v1.0.13.tar.gz"
+  sha256 "0a8981bcf7ab49d0be375fdf9f25bb60056c097c64a4d21dab02815facded275"
   license "MIT"
 
   depends_on "protobuf"
